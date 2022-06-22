@@ -88,3 +88,7 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+.DS_Store
+Trivia/Trivia/Assets.xcassets/AppIcon.appiconset/1200px-MercadoLibre-1 (1).png
+Trivia/Trivia/Assets.xcassets/logo-mercado-livre.imageset/download (1).png
+.pre-commit-config.yaml
