@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class QuestionViewController: UIViewController {
     
@@ -24,9 +25,19 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
 
         navigationController?.setNavigationBarHidden(true, animated: false)
-        
-        selectCategorie()
         setCurrentQuestion(for: currentQuestionIndex)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let tabBar = tabBarController,
+              let categorie = categorieId else { return }
+        
+        if tabBar.selectedIndex == 0 {
+            selectCategorie()
+            setCurrentQuestion(for: currentQuestionIndex)
+            print(categorie)
+        }
     }
 
     
@@ -44,6 +55,7 @@ class QuestionViewController: UIViewController {
     
     private func selectCategorie() {
         questions = questions.filter({$0.category == categorieId})
+        
     }
     
     private func updateQuestion() {
@@ -88,5 +100,19 @@ class QuestionViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
             self.updateQuestion()}))
         self.present(alert, animated: true)
+    }
+    
+    func getQuestions() {
+        let categoriesURL = "https://opentdb.com/api_category.php"
+        
+//        AF.request(categoriesURL)
+//            .responseDecodable(of: CategoryResponse.self) { data in
+//                switch data.result {
+//                case .success(let categoryResponse):
+//                    //questions = categoryResponse.categories.sorted()
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            }
     }
 }

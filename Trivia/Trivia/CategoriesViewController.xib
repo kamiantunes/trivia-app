@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoriesViewController" customModule="Trivia" customModuleProvider="target">
             <connections>
-                <outlet property="closeButton" destination="agG-w6-t0O" id="022-hz-XoP"/>
                 <outlet property="tableView" destination="DCx-iL-BGZ" id="sMq-Oq-hHe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,39 +20,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DCx-iL-BGZ">
-                    <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                    <rect key="frame" x="0.0" y="52" width="414" height="810"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agG-w6-t0O">
-                    <rect key="frame" x="374" y="60" width="24" height="24"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="24" id="ETa-rV-Fa8"/>
-                        <constraint firstAttribute="width" constant="24" id="bU4-nV-lOi"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain">
-                        <backgroundConfiguration key="background" image="xmark" catalog="system"/>
-                    </buttonConfiguration>
-                    <connections>
-                        <action selector="didCloseTapped:" destination="-1" eventType="touchUpInside" id="J4v-ql-ilc"/>
-                    </connections>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="DCx-iL-BGZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OnE-Ax-5zm"/>
-                <constraint firstItem="DCx-iL-BGZ" firstAttribute="top" secondItem="agG-w6-t0O" secondAttribute="bottom" constant="8" id="TWt-KQ-vGz"/>
-                <constraint firstItem="agG-w6-t0O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="b7k-7E-Gnt"/>
+                <constraint firstItem="DCx-iL-BGZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="Z4D-vj-7Lh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DCx-iL-BGZ" secondAttribute="bottom" id="xZB-2m-Tgo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DCx-iL-BGZ" secondAttribute="trailing" id="xfk-pN-h7k"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="agG-w6-t0O" secondAttribute="trailing" constant="16" id="ygg-Eg-t3X"/>
             </constraints>
             <point key="canvasLocation" x="139" y="151"/>
         </view>
     </objects>
     <resources>
-        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

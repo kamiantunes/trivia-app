@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Alamofire
+
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -15,9 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-//        window.rootViewController = InitialViewController()
-//        window.makeKeyAndVisible()
-//        self.window = window
         
         let rootVC = InitialViewController()
         let rootNC = UINavigationController(rootViewController: rootVC)
@@ -25,6 +25,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = rootNC
         window.makeKeyAndVisible()
         self.window = window
+        
+        AF.request("https://opentdb.com/api_category.php")
+            .responseDecodable(of: CategoryResponse.self) { data in
+                switch data.result {
+                case .success(let categoryResponse):
+                    print(categoryResponse)
+                case .failure(let fail):
+                    print(fail)
+                }
+            }
+        
+//        let url = URL(string: "https://opentdb.com/api_category.php")!
+//        let request = URLRequest(url: url)
+//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//            print(data)
+//            print(response)
+//            print(error)
+//            print("----")
+//            print(String(data: data!, encoding: .utf8))
+//            print("----")
+//
+//            do {
+//                let response = try JSONDecoder().decode(CategoryResponse.self, from: data!)
+//                print(response)
+//            } catch {
+//                print(error)
+//            }
+//        }
+//        task.resume()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

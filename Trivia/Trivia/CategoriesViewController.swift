@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CategoriesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -13,30 +14,39 @@ class CategoriesViewController: UIViewController {
     
     var categories: [Category] = [
         Category(id: 1, name: "Futebol"),
-        Category(id: 2, name:"Geografia"),
-        Category(id: 3, name:"Conhecimentos Gerais")
+        Category(id: 2, name: "Geografia"),
+        Category(id: 3, name: "Conhecimentos Gerais")
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.setNavigationBarHidden(true, animated: true)
-        closeButton.tintColor = .black
+        
+        getCategories()
         
         tableView.dataSource = self
         tableView.delegate = self
-        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        getCategories()
     }
     
-    private func getCategories() {
+    func getCategories() {
+        let categoriesURL = "https://opentdb.com/api_category.php"
+        
+//        AF.request(categoriesURL)
+//            .responseDecodable(of: CategoryResponse.self) { data in
+//                switch data.result {
+//                case .success(let categoryResponse):
+//                    self.categories = categoryResponse.categories.sorted()
+//                    DispatchQueue.main.async {
+//                        self.tableView.reloadData()
+//                    }
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            }
+        
         tableView.reloadData()
-    }
-    
-    
-    @IBAction func didCloseTapped(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
     }
 }
 

@@ -7,37 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC8C8CA03EB1D704BCB51FC8 /* Pods_Trivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65BEC1B6951A023D6F1CACC /* Pods_Trivia.framework */; };
 		E4658BE42858FA30008DDBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4658BE32858FA30008DDBE2 /* AppDelegate.swift */; };
 		E4658BE62858FA30008DDBE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4658BE52858FA30008DDBE2 /* SceneDelegate.swift */; };
 		E4658BED2858FA37008DDBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4658BEC2858FA37008DDBE2 /* Assets.xcassets */; };
 		E4658BF02858FA37008DDBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4658BEE2858FA37008DDBE2 /* LaunchScreen.storyboard */; };
+		E46F3E0F286382C40085D8B7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F3E0E286382C40085D8B7 /* TabBarViewController.swift */; };
+		E46F3E112863A8370085D8B7 /* AlamofireAPICliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F3E102863A8370085D8B7 /* AlamofireAPICliente.swift */; };
 		E4853FBE28621A1E0040ECC5 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4853FBC28621A1E0040ECC5 /* QuestionViewController.swift */; };
 		E4853FBF28621A1E0040ECC5 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4853FBD28621A1E0040ECC5 /* QuestionViewController.xib */; };
-		E4853FC128621FE70040ECC5 /* ConteudoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4853FC028621FE60040ECC5 /* ConteudoModel.swift */; };
+		E4853FC128621FE70040ECC5 /* Conteudo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4853FC028621FE60040ECC5 /* Conteudo.swift */; };
 		E4853FC428622EDF0040ECC5 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4853FC228622EDF0040ECC5 /* InformationViewController.swift */; };
 		E4853FC728623B930040ECC5 /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4853FC628623B930040ECC5 /* InformationViewController.xib */; };
 		E4853FCA28624BBD0040ECC5 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4853FC828624BBD0040ECC5 /* CategoriesViewController.swift */; };
 		E4853FCB28624BBD0040ECC5 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4853FC928624BBD0040ECC5 /* CategoriesViewController.xib */; };
-		E4853FCD286251850040ECC5 /* CategorieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4853FCC286251850040ECC5 /* CategorieModel.swift */; };
+		E4853FCD286251850040ECC5 /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4853FCC286251850040ECC5 /* Categorie.swift */; };
 		E4B4502D28590C4200BD6426 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4502B28590C4200BD6426 /* InitialViewController.swift */; };
 		E4B4502E28590C4200BD6426 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B4502C28590C4200BD6426 /* InitialViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		700950116E81157C70D54367 /* Pods-Trivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia.debug.xcconfig"; path = "Target Support Files/Pods-Trivia/Pods-Trivia.debug.xcconfig"; sourceTree = "<group>"; };
+		72FBA677FA4E7151D6857352 /* Pods-Trivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia.release.xcconfig"; path = "Target Support Files/Pods-Trivia/Pods-Trivia.release.xcconfig"; sourceTree = "<group>"; };
+		C65BEC1B6951A023D6F1CACC /* Pods_Trivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4658BE02858FA30008DDBE2 /* Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4658BE32858FA30008DDBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4658BE52858FA30008DDBE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E4658BEC2858FA37008DDBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4658BEF2858FA37008DDBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4658BF12858FA37008DDBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46F3E0E286382C40085D8B7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E46F3E102863A8370085D8B7 /* AlamofireAPICliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPICliente.swift; sourceTree = "<group>"; };
 		E4853FBC28621A1E0040ECC5 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		E4853FBD28621A1E0040ECC5 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
-		E4853FC028621FE60040ECC5 /* ConteudoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConteudoModel.swift; sourceTree = "<group>"; };
+		E4853FC028621FE60040ECC5 /* Conteudo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conteudo.swift; sourceTree = "<group>"; };
 		E4853FC228622EDF0040ECC5 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		E4853FC628623B930040ECC5 /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
 		E4853FC828624BBD0040ECC5 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		E4853FC928624BBD0040ECC5 /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
-		E4853FCC286251850040ECC5 /* CategorieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieModel.swift; sourceTree = "<group>"; };
+		E4853FCC286251850040ECC5 /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
 		E4B4502B28590C4200BD6426 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		E4B4502C28590C4200BD6426 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8C8CA03EB1D704BCB51FC8 /* Pods_Trivia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6A5D8E82CE7F30EBF602A52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C65BEC1B6951A023D6F1CACC /* Pods_Trivia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4658BD72858FA30008DDBE2 = {
 			isa = PBXGroup;
 			children = (
 				E4658BE22858FA30008DDBE2 /* Trivia */,
 				E4658BE12858FA30008DDBE2 /* Products */,
+				F07CC35D6AF8EBB011063300 /* Pods */,
+				A6A5D8E82CE7F30EBF602A52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,7 +96,9 @@
 				E4658BEC2858FA37008DDBE2 /* Assets.xcassets */,
 				E4658BEE2858FA37008DDBE2 /* LaunchScreen.storyboard */,
 				E4658BF12858FA37008DDBE2 /* Info.plist */,
-				E4853FC028621FE60040ECC5 /* ConteudoModel.swift */,
+				E46F3E102863A8370085D8B7 /* AlamofireAPICliente.swift */,
+				E4853FC028621FE60040ECC5 /* Conteudo.swift */,
+				E4853FCC286251850040ECC5 /* Categorie.swift */,
 				E4853FBC28621A1E0040ECC5 /* QuestionViewController.swift */,
 				E4853FBD28621A1E0040ECC5 /* QuestionViewController.xib */,
 				E4853FC228622EDF0040ECC5 /* InformationViewController.swift */,
@@ -86,9 +107,18 @@
 				E4B4502C28590C4200BD6426 /* InitialViewController.xib */,
 				E4853FC828624BBD0040ECC5 /* CategoriesViewController.swift */,
 				E4853FC928624BBD0040ECC5 /* CategoriesViewController.xib */,
-				E4853FCC286251850040ECC5 /* CategorieModel.swift */,
+				E46F3E0E286382C40085D8B7 /* TabBarViewController.swift */,
 			);
 			path = Trivia;
+			sourceTree = "<group>";
+		};
+		F07CC35D6AF8EBB011063300 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				700950116E81157C70D54367 /* Pods-Trivia.debug.xcconfig */,
+				72FBA677FA4E7151D6857352 /* Pods-Trivia.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4658BF42858FA37008DDBE2 /* Build configuration list for PBXNativeTarget "Trivia" */;
 			buildPhases = (
+				CBE44D2256F8E37BCF17C44E /* [CP] Check Pods Manifest.lock */,
 				E4658BDC2858FA30008DDBE2 /* Sources */,
 				E4658BDD2858FA30008DDBE2 /* Frameworks */,
 				E4658BDE2858FA30008DDBE2 /* Resources */,
+				E25DC30F2482A6236F97873C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +192,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CBE44D2256F8E37BCF17C44E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trivia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E25DC30F2482A6236F97873C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trivia/Pods-Trivia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trivia/Pods-Trivia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trivia/Pods-Trivia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E4658BDC2858FA30008DDBE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -168,9 +242,11 @@
 				E4853FBE28621A1E0040ECC5 /* QuestionViewController.swift in Sources */,
 				E4853FC428622EDF0040ECC5 /* InformationViewController.swift in Sources */,
 				E4658BE42858FA30008DDBE2 /* AppDelegate.swift in Sources */,
-				E4853FCD286251850040ECC5 /* CategorieModel.swift in Sources */,
+				E4853FCD286251850040ECC5 /* Categorie.swift in Sources */,
+				E46F3E0F286382C40085D8B7 /* TabBarViewController.swift in Sources */,
 				E4658BE62858FA30008DDBE2 /* SceneDelegate.swift in Sources */,
-				E4853FC128621FE70040ECC5 /* ConteudoModel.swift in Sources */,
+				E46F3E112863A8370085D8B7 /* AlamofireAPICliente.swift in Sources */,
+				E4853FC128621FE70040ECC5 /* Conteudo.swift in Sources */,
 				E4853FCA28624BBD0040ECC5 /* CategoriesViewController.swift in Sources */,
 				E4B4502D28590C4200BD6426 /* InitialViewController.swift in Sources */,
 			);
@@ -306,11 +382,13 @@
 		};
 		E4658BF52858FA37008DDBE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 700950116E81157C70D54367 /* Pods-Trivia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VBKQ5VV87D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Trivia/Info.plist;
 				INFOPLIST_KEY_NSMainNibFile = InitialViewController;
@@ -323,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.Trivia;
+				PRODUCT_BUNDLE_IDENTIFIER = Alkemy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -333,11 +411,13 @@
 		};
 		E4658BF62858FA37008DDBE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72FBA677FA4E7151D6857352 /* Pods-Trivia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VBKQ5VV87D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Trivia/Info.plist;
 				INFOPLIST_KEY_NSMainNibFile = InitialViewController;
@@ -350,7 +430,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Alkemy.Trivia;
+				PRODUCT_BUNDLE_IDENTIFIER = Alkemy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
